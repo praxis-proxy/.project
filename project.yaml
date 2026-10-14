@@ -1,0 +1,136 @@
+# Praxis .project metadata
+#
+# Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
+
+schema_version: "1.0.0"
+slug: "praxis"
+name: "Praxis"
+description: "Praxis is a high-performance and security-first proxy server and framework for AI and cloud-native workloads."
+type: "platform"
+project_lead:
+  - "shaneutt"
+slack_channels:
+  - name: "#praxis"
+    workspace: "cncf"
+    link: "https://cloud-native.slack.com/archives/C0BK0RSP5RC"
+    primary: true
+
+maturity_log:
+  - phase: "sandbox"
+    date: 2026-09-29T00:00:00Z
+    issue: "https://github.com/cncf/sandbox/issues/506"
+
+repositories:
+  - url: "https://github.com/praxis-proxy/praxis"
+    primary: true
+    tags: [core]
+  - url: "https://github.com/praxis-proxy/ai"
+    tags: [ai]
+  - url: "https://github.com/praxis-proxy/grid"
+    tags: [grid]
+  - url: "https://github.com/praxis-proxy/policy"
+    tags: [policy]
+  - url: "https://github.com/praxis-proxy/operator"
+    tags: [kubernetes]
+  - url: "https://github.com/praxis-proxy/forge"
+    tags: [tooling]
+  - url: "https://github.com/praxis-proxy/enhancements"
+    tags: [process]
+  - url: "https://github.com/praxis-proxy/benchmarks"
+    tags: [tooling]
+  - url: "https://github.com/praxis-proxy/website"
+    tags: [docs]
+  - url: "https://github.com/praxis-proxy/praxis-proxy.github.io"
+    tags: [docs]
+  - url: "https://github.com/praxis-proxy/demos"
+    tags: [examples]
+  - url: "https://github.com/praxis-proxy/conventions"
+    tags: [process]
+  - url: "https://github.com/praxis-proxy/experimental"
+    tags: [experimental]
+  - url: "https://github.com/praxis-proxy/.github"
+    tags: [community]
+  - url: "https://github.com/praxis-proxy/.project"
+    tags: [community]
+
+website: "https://praxis.fast"
+
+adopters:
+  path: "https://github.com/praxis-proxy/praxis/blob/main/ADOPTERS.md"
+
+package_managers:
+  docker:
+    - "ghcr.io/praxis-proxy/praxis"
+  crates:
+    - "praxis-proxy"
+    - "praxis-proxy-core"
+    - "praxis-proxy-filter"
+    - "praxis-proxy-protocol"
+    - "praxis-proxy-tls"
+
+social:
+  twitter: "https://x.com/_praxis_ai"
+  linkedin: "https://www.linkedin.com/company/praxis-proxy/"
+  bluesky: "https://bsky.app/profile/praxis.fast"
+  slack: "https://cloud-native.slack.com/archives/C0BK0RSP5RC"
+  github: "https://github.com/praxis-proxy/praxis/discussions"
+
+security:
+  policy:
+    path: "https://github.com/praxis-proxy/praxis/blob/main/SECURITY.md"
+  contact:
+    advisory_url: "https://github.com/praxis-proxy/praxis/security/advisories/new"
+
+governance:
+  contributing:
+    path: "https://github.com/praxis-proxy/praxis/blob/main/CONTRIBUTING.md"
+  codeowners:
+    path: "https://github.com/praxis-proxy/praxis/blob/main/.github/CODEOWNERS"
+  governance_doc:
+    path: "https://github.com/praxis-proxy/praxis/blob/main/GOVERNANCE.md"
+  vendor_neutrality_statement:
+    path: "https://github.com/praxis-proxy/praxis/blob/main/GOVERNANCE.md#project-vs-product"
+  decision_making_process:
+    path: "https://github.com/praxis-proxy/praxis/blob/main/GOVERNANCE.md#decision-making"
+  roles_and_teams:
+    path: "https://github.com/praxis-proxy/praxis/blob/main/GOVERNANCE.md#roles"
+  code_of_conduct:
+    path: "https://github.com/praxis-proxy/praxis/blob/main/CODE_OF_CONDUCT.md"
+  contributor_ladder:
+    path: "https://github.com/praxis-proxy/praxis/blob/main/GOVERNANCE.md#becoming-a-reviewer"
+  change_process:
+    path: "https://github.com/praxis-proxy/enhancements/blob/main/docs/process.md"
+  comms_channels:
+    path: "https://github.com/praxis-proxy/praxis/blob/main/README.md#community"
+  contributor_guide:
+    path: "https://github.com/praxis-proxy/praxis/blob/main/docs/developing/getting-started.md"
+  maintainer_lifecycle:
+    onboarding_doc:
+      path: "https://github.com/praxis-proxy/praxis/blob/main/GOVERNANCE.md#becoming-a-reviewer"
+    progression_ladder:
+      path: "https://github.com/praxis-proxy/praxis/blob/main/GOVERNANCE.md#becoming-a-reviewer"
+    offboarding_policy:
+      path: "https://github.com/praxis-proxy/praxis/blob/main/GOVERNANCE.md#stepping-down-and-inactivity"
+
+legal:
+  license:
+    path: "https://github.com/praxis-proxy/praxis/blob/main/LICENSE"
+  identity_type:
+    has_dco: true
+    has_cla: false
+    dco_url:
+      path: "https://developercertificate.org/"
+
+documentation:
+  readme:
+    path: "https://github.com/praxis-proxy/praxis/blob/main/README.md"
+  support:
+    path: "https://github.com/praxis-proxy/praxis/blob/main/README.md#community"
+  architecture:
+    path: "https://github.com/praxis-proxy/praxis/blob/main/docs/architecture/overview.md"
+  api:
+    path: "https://github.com/praxis-proxy/praxis/blob/main/docs/filters/reference.md"
+
+landscape:
+  category: "Orchestration & Management"
+  subcategory: "Service Proxy"

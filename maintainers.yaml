@@ -1,0 +1,88 @@
+# Praxis maintainer roster
+#
+# Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
+# Public role definitions: https://github.com/praxis-proxy/praxis/blob/main/MAINTAINERS.md
+
+maintainers:
+  - project_id: "praxis"     # Must match slug in project.yaml
+    org: "praxis-proxy"      # GitHub organization
+    teams:
+      - name: "project-leads"
+        members:
+          - shaneutt
+      - name: "core-maintainers"
+        members:
+          - alexsnaps
+          - leseb
+          - twghu
+      - name: "ai-maintainers"
+        members:
+          - leseb
+      - name: "grid-maintainers"
+        members:
+          - hexfusion
+          - nerdalert
+      - name: "policy-maintainers"
+        members:
+          - araujof
+      - name: "community-maintainers"
+        members:
+          - davidgs
+      # Unmanaged teams: teams with "managed: false" are tracked here for
+      # documentation but are excluded from CNCF resource provisioning
+      # (mailing lists, service desk, Copilot seats, handle verification).
+      - name: "core-reviewers"
+        managed: false
+        members:
+          - aslakknutsen
+          - alexsnaps
+          - leseb
+          - dgn
+          - araujof
+          - rikatz
+          - elevran
+          - twghu
+          - eoinfennessy
+      - name: "ai-reviewers"
+        managed: false
+        members:
+          - aslakknutsen
+          - alexsnaps
+          - nerdalert
+          - Ladas
+          - yossiovadia
+          - cnuland
+          - franciscojavierarceo
+          - didierofrivia
+          - rikatz
+          - rhdedgar
+          - noyitz
+          - pierDipi
+          - jland-redhat
+          - liavweiss
+          - christinaexyou
+          - valeriiashapoval
+          - asaadbalum
+          - mkoushni
+          - crstrn13
+          - henschwartz
+          - szedan-rh
+      - name: "grid-reviewers"
+        managed: false
+        members:
+          - evacchi
+          - jordigilh
+      - name: "policy-reviewers"
+        managed: false
+        members:
+          - maleck13
+          - david-martin
+          - guicassolato
+          - esnible
+          - araujof
+          - terylt
+          - yehuditkerido
+          - szedan-rh
+      - name: "emeritus"
+        managed: false
+        members: []
