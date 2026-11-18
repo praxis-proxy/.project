@@ -18,6 +18,7 @@ maintainers:
       - name: "ai-maintainers"
         members:
           - leseb
+          - aslakknutsen
       - name: "grid-maintainers"
         members:
           - hexfusion
